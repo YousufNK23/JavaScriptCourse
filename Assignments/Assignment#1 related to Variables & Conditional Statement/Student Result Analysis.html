@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Student Result Analysis</title>
+    <style>
+        b {
+            color: #be0f0f;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+        var Sub1 = parseFloat(prompt("Enter Your Sub1 Marks"));
+        var Sub2 = parseFloat(prompt("Enter Your Sub2 Marks"));
+        var Sub3 = parseFloat(prompt("Enter Your Sub3 Marks"));
+        var Sub4 = parseFloat(prompt("Enter Your Sub4 Marks"));
+        var Sub5 = parseFloat(prompt("Enter Your Sub5 Marks"));
+        var Sub6 = parseFloat(prompt("Enter Your Sub6 Marks"));
+        var Sub7 = parseFloat(prompt("Enter Your Sub7 Marks"));
+        var Sub8 = parseFloat(prompt("Enter Your Sub8 Marks"));
+        var Sub9 = parseFloat(prompt("Enter Your Sub9 Marks"));
+        var Sub10 = parseFloat(prompt("Enter Your Sub10 Marks"));
+
+        var obt = Sub1 + Sub2 + Sub3 + Sub4 + Sub5 + Sub6 + Sub7 + Sub8 + Sub9 + Sub10;
+        var per = obt / 1000 * 100;
+
+        document.write("<b>Obtained Marks:</b>" + obt + "<br>");
+        document.write("<b>Percentage:</b>" + per + "<br>");
+
+
+        if (per <= 100 && per >= 80) {
+            document.write("<b>Grade:</b> A1")
+        }
+        else if (per <= 79 && per >= 70) {
+            document.write("<b>Grade:</b> A")
+        }
+        else if (per <= 69 && per >= 60) {
+            document.write("<b>Grade:</b> B")
+        }
+        else if (per <= 59 && per >= 50) {
+            document.write("<b>Grade:</b> C")
+        }
+        else if (per <= 49 && per >= 40) {
+            document.write("<b>Grade:</b> D")
+        }
+        else
+            document.write("<b>FAIL</b>")
+    </script>
+</body>
+
+</html>

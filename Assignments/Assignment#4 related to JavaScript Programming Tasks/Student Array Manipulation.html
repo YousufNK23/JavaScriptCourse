@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Array Manipulation</title>
+</head>
+<body>
+    <script>
+        let studentsName = ["Khuzaima Ahmed", "Misbah Baqir", "Huzaifa Iqbal", "Sana Kiran", "Yousuf Naveed", "Sohaib Shah", "Kashaf", "Kinza", "Muneeb Hassan", "Afzal", "Abdul Rafay"];
+        
+        console.log(studentsName[4]);
+        document.write(studentsName[4] + "<br>");
+        console.log(studentsName);
+        document.write(studentsName + "<br>");
+
+        document.write(studentsName.length + "<br>");
+
+        studentsName.push("Khuzaima")
+        document.write(studentsName + "<br>");
+
+        studentsName.unshift("Huzaifa")
+        document.write(studentsName + "<br>");
+
+        studentsName.shift()
+        document.write(studentsName + "<br>")
+
+        studentsName.pop("Khuzaima")
+        document.write(studentsName + "<br>");
+
+        studentsName.sort()
+        document.write(studentsName + "<br>")
+
+        studentsName[4]=("Muneeb")
+        document.write(studentsName + "<br>")
+
+        studentsName.indexOf("Khuzaima")
+        document.write(studentsName.indexOf("Khuzaima Ahmed") + "<br>");
+        document.write(studentsName.indexOf("Khuzaima") + "<br>");
+
+        let names = ["Yousuf", "Sana", "Khuzaima", "Kinza"]
+        let newarray= names.concat(studentsName)
+        document.write(newarray + "<br>")
+    </script>
+</body>
+</html>
